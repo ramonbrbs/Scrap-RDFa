@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
-import sys
+import sys, traceback
+import tempfile
 #import urllib.parse
 from robobrowser import RoboBrowser
 from settings import *
+from rdflib import Graph
+from merge import *
+from extrair import *
+import urllib
+import io
+import os
 
 vetor_links = []
+visitados_links = []
 url_pagina_inicial = PAGINA_INICIAL
+vetor_links.append(url_pagina_inicial)
+grafo = Graph()
 
 def url_navegavel(url):
     
@@ -15,6 +25,13 @@ def url_navegavel(url):
         return url_pagina_inicial+ "/" + url
 
     return url
+
+def corrige_url(url,urlbase):
+    if(url.startswith("http")):
+        return url
+    if(url.startswith("/")):
+        return urlbase[:urlbase.rfind('/')] + url
+    return urlbase + url
 
 def valida_url(url):
     global vetor_links
@@ -49,19 +66,43 @@ def valida_url(url):
 
 def captura(url):
     global vetor_links
+    global visitados_links
+    global grafo
+    print('-----' + url + '-------')
+    visitados_links.append(url)
+    vetor_links.remove(url)
     browser = RoboBrowser()
+    
     try:
         browser.open(url_navegavel(url))
+        print("++++" + url_navegavel(url) + "+++")
+        if(browser.response.status_code != 200):
+            return
         
+        
+        ff = open('r.html', 'w')
+        ff.write(browser.parsed.encode('utf-8'))
+        ff.close()
+        g = extrair_rdfa(ff)
+        os.remove(ff.name)
+        grafo = merge_graphs(grafo,g)
         links = browser.select('a')
         
         for link in links:
-           if(link.has_attr('href') and valida_url(link['href'])):
-               vetor_links.append(link['href'])
+            if(link.has_attr('href') and valida_url(link['href'])):
+                if corrige_url(link['href'], url) not in vetor_links and corrige_url(link['href'], url) not in visitados_links:
+                    vetor_links.append(corrige_url(link['href'], url))
+                
     except:
         print("erro")
         e = sys.exc_info()[0]
+        traceback.print_exc(file=sys.stdout)
         print(e)
 
 
-captura(url_pagina_inicial)
+while len(vetor_links) != 0:
+    captura(vetor_links[0])
+
+f = open('teste2.rdf', 'w')
+resultado =  grafo.serialize(format='xml')
+f.write(resultado)
