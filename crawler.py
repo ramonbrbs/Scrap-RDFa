@@ -37,6 +37,7 @@ def corrige_url(url,urlbase):
 
 def valida_url(url):
     global vetor_links
+    global QUANTIDADE_PAGINAS
     #verfica se começa com http.. se começa verifica se o endereço inicial é do proprio site
     if(url.startswith('http') ):
         if(not url.startswith(url_pagina_inicial)):
@@ -92,7 +93,7 @@ def captura(url): #metodo para acessar uma url e capturar informações
         
         for link in links: #varre os links, corrige e adiciona ao vetor de 'para visitar'
             if(link.has_attr('href') and valida_url(link['href'])):
-                if corrige_url(link['href'], url) not in vetor_links and corrige_url(link['href'], url) not in visitados_links:
+                if corrige_url(link['href'], url) not in vetor_links and corrige_url(link['href'], url) not in visitados_links and (len(visitados_links) + len(vetor_links) < QUANTIDADE_PAGINAS):
                     vetor_links.append(corrige_url(link['href'], url))
                 
     except:
@@ -114,5 +115,5 @@ def iniciar(url):
     return f.name
 
 if __name__ == "__main__":
-    iniciar()
+    iniciar(PAGINA_INICIAL)
 
