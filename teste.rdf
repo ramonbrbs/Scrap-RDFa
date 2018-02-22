@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/terms/"
+   xmlns:doap="http://usefulinc.com/ns/doap#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema="http://schema.org/"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2012/pyRdfa">
+    <doap:repository rdf:resource="https://github.com/RDFLib/pyrdfa3"/>
+    <doap:license rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"/>
+    <doap:file-release rdf:resource="https://github.com/RDFLib/pyrdfa3"/>
+    <doap:created>2012-05-24</doap:created>
+    <doap:description>pyRdfa is a distiller that generates RDF triples from an XML or HTML5 file annotated by RDFa in various RDF serialization formats. It can either be used directly from a command line or via a CGI service.</doap:description>
+    <doap:developer rdf:resource="http://www.ivan-herman.net/foaf#me"/>
+    <doap:repository-location rdf:resource="https://github.com/RDFLib/pyrdfa3"/>
+    <doap:name>pyRdfa</doap:name>
+    <rdfs:seeAlso rdf:resource="http://rbarbosa.me/TR/rdfa-core/"/>
+    <doap:maintainer rdf:resource="http://www.ivan-herman.net/foaf#me"/>
+    <doap:programming-language>Python</doap:programming-language>
+    <rdfs:comment>RDFa 1.1 is a specification for attributes to be used with XML languages or with HTML5 to express structured data. The rendered, hypertext data of XML or HTML is reused by the RDFa markup, so that publishers don’t need to repeat significant data in the document content. The underlying abstract representation is RDF, which lets publishers build their own vocabulary, extend others, and evolve their vocabulary with maximal interoperability over time. pyRdfa is a distiller that generates RDF triples from an XML or HTML5 file annotated by RDFa in various RDF serialization formats. It can either be used directly from a command line or via a CGI service. It corresponds to the RDFa 1.1 Core document, XHTML+RDFa, and HTML+RDFa specifications, as well as to the SVG Tiny 1.2 Recommendation for the SVG version.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ivan-herman.net/foaf#me">
+    <foaf:name>Ivan
+            Herman</foaf:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/alice/posts/trouble_with_bob">
+    <rdf:type rdf:resource="http://schema.org/BlogPosting"/>
+    <dc:creator rdf:resource="http://rbarbosa.me/ex.html#me"/>
+    <dc:title>The trouble with Bob</dc:title>
+    <schema:creator rdf:resource="http://rbarbosa.me/ex.html#me"/>
+    <schema:articleBody>
+         The trouble with Bob is that he takes much better photos than I do:
+       </schema:articleBody>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/RDFLib/pyrdfa3">
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Repository"/>
+  </rdf:Description>
+</rdf:RDF>
