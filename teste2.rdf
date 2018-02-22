@@ -6,96 +6,96 @@
    xmlns:ns2="http://www.w3.org/ns/rdfa#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#brian">
-    <ns11:name>Brian Sletten</ns11:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne5e907c23dfe4247b0f8ebf4fcb86eb3">
-    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#MasterCard"/>
+  <rdf:Description rdf:nodeID="Nd206b05189ae4bc88b6a0700c90fabbf">
+    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#PayPal"/>
+    <gr:name>Canon Rebel T2i (EOS 550D)</gr:name>
     <gr:description>
                 The Canon Rebel T2i (EOS 550D) is Cannon's top-of-the-line consumer digital SLR camera.
                 It can shoot up to 18 megapixel resolution photos and features an ISO range of 100-6400.
               </gr:description>
-    <gr:hasBusinessFunction rdf:resource="http://purl.org/goodrelations/v1#Sell"/>
-    <ns11:depiction rdf:resource="http://shop.usa.canon.com/wcsstore/eStore/images/t2ikit_1_l.jpg"/>
-    <ns11:page rdf:resource="http://shop.usa.canon.com/"/>
-    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#PayPal"/>
-    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#Offering"/>
-    <gr:hasPriceSpecification rdf:nodeID="N4b484e6be1d84ec3909af93c75460180"/>
     <gr:hasEAN_UCC-13>013803123784</gr:hasEAN_UCC-13>
-    <gr:name>Canon Rebel T2i (EOS 550D)</gr:name>
+    <gr:hasBusinessFunction rdf:resource="http://purl.org/goodrelations/v1#Sell"/>
+    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#MasterCard"/>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#Offering"/>
+    <ns11:depiction rdf:resource="http://shop.usa.canon.com/wcsstore/eStore/images/t2ikit_1_l.jpg"/>
+    <gr:hasPriceSpecification rdf:nodeID="N63f354c575224530a40175d9a1ba6636"/>
+    <ns11:page rdf:resource="http://shop.usa.canon.com/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nfab45dfa09e1449c925a14270ab33d9e">
-    <rdf:type rdf:resource="http://schema.org/Place"/>
-    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/wells-fargo-center.html"/>
-    <ns1:address rdf:nodeID="N7256e5580a334c94b6c6d1a3337c3da6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7256e5580a334c94b6c6d1a3337c3da6">
-    <ns1:addressRegion>PA</ns1:addressRegion>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg-address">
+    <ns1:addressRegion>FL</ns1:addressRegion>
     <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
-    <ns1:addressLocality>Philadelphia</ns1:addressLocality>
+    <ns1:streetAddress>3102 Highway 98</ns1:streetAddress>
+    <ns1:addressLocality>Mexico Beach</ns1:addressLocality>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#manu">
-    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#brian"/>
-    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#alex"/>
-    <ns11:name>Manu Sporny</ns11:name>
+  <rdf:Description rdf:nodeID="N766acaeacb78417c821a2d5a9aae694b">
+    <ns1:offers rdf:nodeID="N53015bd807cf4efa8d56019389137ac8"/>
+    <ns1:name>Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)</ns1:name>
+    <ns1:location rdf:nodeID="N8fe0b073ab8c49b0a465990131532c1b"/>
+    <ns1:startDate>2011-04-21T20:00</ns1:startDate>
+    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/nba-miami-philidelphia-game3.html"/>
+    <rdf:type rdf:resource="http://schema.org/Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#brian">
+    <ns11:name>Brian Sletten</ns11:name>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html">
-    <ns2:usesVocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc3f75b7857ea43309a7b384881043a42">
-    <ns1:image rdf:resource="http://manu.sporny.org/images/manu.png"/>
-    <ns1:email rdf:resource="http://rbarbosa.me/cdn-cgi/l/email-protection#2e435d5e415c40576e4a4749475a4f424c4f544f4f5c004d4143"/>
-    <ns1:url rdf:resource="http://manu.sporny.org/"/>
-    <ns1:name>Manu Sporny</ns1:name>
-    <ns1:jobTitle>Founder/CEO</ns1:jobTitle>
-    <ns1:telephone>(540) 961-4469</ns1:telephone>
-    <rdf:type rdf:resource="http://schema.org/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N57068f239603420c801d71922075e198">
-    <ns1:offers rdf:nodeID="Nbcc6cd4b63fc4d969f804b61410f3645"/>
-    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/nba-miami-philidelphia-game3.html"/>
-    <ns1:startDate>2011-04-21T20:00</ns1:startDate>
-    <ns1:name>Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)</ns1:name>
-    <ns1:location rdf:nodeID="Nfab45dfa09e1449c925a14270ab33d9e"/>
-    <rdf:type rdf:resource="http://schema.org/Event"/>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#manu">
+    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#alex"/>
+    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#brian"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns11:name>Manu Sporny</ns11:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://rbarbosa.me/exemplo/person.html">
     <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63f354c575224530a40175d9a1ba6636">
+    <gr:hasCurrencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">899.0</gr:hasCurrencyValue>
+    <gr:hasCurrency>USD</gr:hasCurrency>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#UnitPriceSpecification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7332030f84b344e18c116d29b7668ddc">
+    <ns1:addressLocality>Philadelphia</ns1:addressLocality>
+    <ns1:addressRegion>PA</ns1:addressRegion>
+    <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#alex">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <ns11:name>Alex Milowski</ns11:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N4b484e6be1d84ec3909af93c75460180">
-    <gr:hasCurrency>USD</gr:hasCurrency>
-    <gr:hasCurrencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">899.0</gr:hasCurrencyValue>
-    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#UnitPriceSpecification"/>
+  <rdf:Description rdf:nodeID="Ne37c130baf174475926b39f42aabf12e">
+    <ns1:email rdf:resource="http://rbarbosa.me/cdn-cgi/l/email-protection#cba6b8bba4b9a5b28bafa2aca2bfaaa7a9aab1aaaab9e5a8a4a6"/>
+    <ns1:jobTitle>Founder/CEO</ns1:jobTitle>
+    <ns1:name>Manu Sporny</ns1:name>
+    <ns1:telephone>(540) 961-4469</ns1:telephone>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:url rdf:resource="http://manu.sporny.org/"/>
+    <ns1:image rdf:resource="http://manu.sporny.org/images/manu.png"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg">
-    <rdf:type rdf:resource="http://schema.org/LocalBusiness"/>
-    <ns1:name>Beachwalk Beachwear &amp; Giftware</ns1:name>
-    <ns1:telephone>850-648-4200</ns1:telephone>
-    <ns1:description> A superb collection of fine gifts and clothing
-                to accent your stay in Mexico Beach.</ns1:description>
-    <ns1:address rdf:resource="http://rbarbosa.me/exemplo/place.html#bbg-address"/>
+  <rdf:Description rdf:nodeID="N8fe0b073ab8c49b0a465990131532c1b">
+    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/wells-fargo-center.html"/>
+    <ns1:address rdf:nodeID="N7332030f84b344e18c116d29b7668ddc"/>
+    <rdf:type rdf:resource="http://schema.org/Place"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg-address">
-    <ns1:addressLocality>Mexico Beach</ns1:addressLocality>
-    <ns1:addressRegion>FL</ns1:addressRegion>
-    <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
-    <ns1:streetAddress>3102 Highway 98</ns1:streetAddress>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbcc6cd4b63fc4d969f804b61410f3645">
+  <rdf:Description rdf:nodeID="N53015bd807cf4efa8d56019389137ac8">
     <rdf:type rdf:resource="http://schema.org/AggregateOffer"/>
     <ns1:offerCount>1,938</ns1:offerCount>
     <ns1:lowPrice>$35</ns1:lowPrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg">
+    <ns1:name>Beachwalk Beachwear &amp; Giftware</ns1:name>
+    <ns1:address rdf:resource="http://rbarbosa.me/exemplo/place.html#bbg-address"/>
+    <ns1:description> A superb collection of fine gifts and clothing
+                to accent your stay in Mexico Beach.</ns1:description>
+    <rdf:type rdf:resource="http://schema.org/LocalBusiness"/>
+    <ns1:telephone>850-648-4200</ns1:telephone>
   </rdf:Description>
   <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html">
     <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rbarbosa.me/exemplo/event.html">
     <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html">
+    <ns2:usesVocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
   </rdf:Description>
 </rdf:RDF>

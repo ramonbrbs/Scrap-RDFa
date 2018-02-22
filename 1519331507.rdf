@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:gr="http://purl.org/goodrelations/v1#"
+   xmlns:ns1="http://schema.org/"
+   xmlns:ns11="http://xmlns.com/foaf/0.1/"
+   xmlns:ns2="http://www.w3.org/ns/rdfa#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg-address">
+    <ns1:streetAddress>3102 Highway 98</ns1:streetAddress>
+    <ns1:addressRegion>FL</ns1:addressRegion>
+    <ns1:addressLocality>Mexico Beach</ns1:addressLocality>
+    <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbac77d2aa51c4da7b91a76a3e5cf99e4">
+    <ns1:telephone>(540) 961-4469</ns1:telephone>
+    <ns1:name>Manu Sporny</ns1:name>
+    <ns1:email rdf:resource="http://rbarbosa.me/cdn-cgi/l/email-protection#1b76686b746975625b7f727c726f7a77797a617a7a6935787476"/>
+    <ns1:image rdf:resource="http://manu.sporny.org/images/manu.png"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:url rdf:resource="http://manu.sporny.org/"/>
+    <ns1:jobTitle>Founder/CEO</ns1:jobTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb31efe952a7c4df5bf23a3a59f4e7f90">
+    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/nba-miami-philidelphia-game3.html"/>
+    <ns1:location rdf:nodeID="N47737ff515a64abb9f98703e39f950ca"/>
+    <ns1:startDate>2011-04-21T20:00</ns1:startDate>
+    <rdf:type rdf:resource="http://schema.org/Event"/>
+    <ns1:name>Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)</ns1:name>
+    <ns1:offers rdf:nodeID="N8ce5e54285c84d67a4beac4c417bd42b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47a1ee7fd717462990328dd4cd7d1c4a">
+    <gr:description>
+                The Canon Rebel T2i (EOS 550D) is Cannon's top-of-the-line consumer digital SLR camera.
+                It can shoot up to 18 megapixel resolution photos and features an ISO range of 100-6400.
+              </gr:description>
+    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#MasterCard"/>
+    <ns11:depiction rdf:resource="http://shop.usa.canon.com/wcsstore/eStore/images/t2ikit_1_l.jpg"/>
+    <gr:name>Canon Rebel T2i (EOS 550D)</gr:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#Offering"/>
+    <gr:hasBusinessFunction rdf:resource="http://purl.org/goodrelations/v1#Sell"/>
+    <gr:hasPriceSpecification rdf:nodeID="N3470bb0948354d1695d8fad3fd169cdd"/>
+    <gr:hasEAN_UCC-13>013803123784</gr:hasEAN_UCC-13>
+    <ns11:page rdf:resource="http://shop.usa.canon.com/"/>
+    <gr:acceptedPaymentMethods rdf:resource="http://purl.org/goodrelations/v1#PayPal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3470bb0948354d1695d8fad3fd169cdd">
+    <gr:hasCurrency>USD</gr:hasCurrency>
+    <gr:hasCurrencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">899.0</gr:hasCurrencyValue>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#UnitPriceSpecification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/event.html">
+    <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#manu">
+    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#brian"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns11:knows rdf:resource="http://rbarbosa.me/exemplo/social.html#alex"/>
+    <ns11:name>Manu Sporny</ns11:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f0be1e45be04cd0a413fa886b9bd1d2">
+    <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
+    <ns1:addressLocality>Philadelphia</ns1:addressLocality>
+    <ns1:addressRegion>PA</ns1:addressRegion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html#bbg">
+    <ns1:address rdf:resource="http://rbarbosa.me/exemplo/place.html#bbg-address"/>
+    <ns1:telephone>850-648-4200</ns1:telephone>
+    <ns1:description> A superb collection of fine gifts and clothing
+                to accent your stay in Mexico Beach.</ns1:description>
+    <rdf:type rdf:resource="http://schema.org/LocalBusiness"/>
+    <ns1:name>Beachwalk Beachwear &amp; Giftware</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#brian">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns11:name>Brian Sletten</ns11:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/place.html">
+    <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ce5e54285c84d67a4beac4c417bd42b">
+    <rdf:type rdf:resource="http://schema.org/AggregateOffer"/>
+    <ns1:lowPrice>$35</ns1:lowPrice>
+    <ns1:offerCount>1,938</ns1:offerCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html#alex">
+    <ns11:name>Alex Milowski</ns11:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47737ff515a64abb9f98703e39f950ca">
+    <ns1:url rdf:resource="http://rbarbosa.me/exemplo/wells-fargo-center.html"/>
+    <ns1:address rdf:nodeID="N9f0be1e45be04cd0a413fa886b9bd1d2"/>
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/social.html">
+    <ns2:usesVocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rbarbosa.me/exemplo/person.html">
+    <ns2:usesVocabulary rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+</rdf:RDF>

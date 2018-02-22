@@ -5,6 +5,7 @@ from settings import *
 from rdflib import Graph
 from merge import *
 from extrair import *
+import time
 import re 
 
 vetor_links = [] #vetor dos links para visitas
@@ -101,9 +102,17 @@ def captura(url): #metodo para acessar uma url e capturar informações
         print(e)
 
 
-while len(vetor_links) != 0: #enquanto existirem urls no vetor de para visitar..
-    captura(vetor_links[0])
+def iniciar(url):
+    global PAGINA_INICIAL
+    PAGINA_INICIAL = url
+    while len(vetor_links) != 0: #enquanto existirem urls no vetor de para visitar..
+        captura(vetor_links[0])
+    timestamp = (int)(time.time())
+    f = open((str)(timestamp) + '.rdf', 'w')
+    resultado =  grafo.serialize(format='xml') #transforma o grafo em rdf
+    f.write(resultado)
+    return f.name
 
-f = open('teste2.rdf', 'w')
-resultado =  grafo.serialize(format='xml') #transforma o grafo em rdf
-f.write(resultado)
+if __name__ == "__main__":
+    iniciar()
+
